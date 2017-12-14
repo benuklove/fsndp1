@@ -9,9 +9,9 @@ pp = pprint.PrettyPrinter(indent=4)
 key = apikey.apikey
 query = "muppets"
 
+# Given a query, get movies from TMDB
 url = "https://api.themoviedb.org/3/search/movie?api_key={}&language=en-US&query=" \
       "{}&page=1&include_adult=false".format(key, query)
-
 r = requests.get(url)
 data = r.json()
 # print(pp.pprint(data["results"][0]))
@@ -21,7 +21,7 @@ movies = []
 # Add movies to the list
 [movies.append(dict(title=result["original_title"],
                     id=result["id"],
-                    poster=result["poster_path"],
+                    poster="https://image.tmdb.org/t/p/original{}".format(result["poster_path"]),
                     popularity=result["popularity"])) for result in data["results"]]
 
 # Longer list of movies that results from common movie title keywords, shortened to 20 most popular
@@ -35,9 +35,10 @@ for movie in movies:
     vdata = vr.json()
     # for simplicity, use the first movie trailer option available for each movie
     if vdata["videos"]["results"]:
-        youtube_key = vdata["videos"]["results"][0]["key"]
+        youtube_url = "https://www.youtube.com/watch?v={}".format(
+            vdata["videos"]["results"][0]["key"])
     else:
-        youtube_key = "None"
-    movie["youtube_key"] = youtube_key
+        youtube_url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    movie["youtube_url"] = youtube_url
 
 print(pp.pprint(movies))
