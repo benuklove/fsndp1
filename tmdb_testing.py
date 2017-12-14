@@ -11,14 +11,14 @@ query = "muppets"
 end = "?api_key=" + key + "&language=en-US&query=" + query + "&page=1&include_adult=false"
 
 # url = [key, lang, query, end]
-# https://api.themoviedb.org/3/search/movie?api_key=15f5adceb10ba0c3ba6219fcb441f086&language=en-US&query=muppets&page=1&include_adult=false
+
 
 # url = "".join([base_url, end])
 #
 # payload = {}
 # response = requests.request("GET", url, data=payload)
-url = "https://api.themoviedb.org/3/search/movie?api_key=15f5adceb10ba0c3ba6219fcb441f086&language=en-US&query=" \
-      "{}&page=1&include_adult=false".format(query)
+url = "https://api.themoviedb.org/3/search/movie?api_key={}&language=en-US&query=" \
+      "{}&page=1&include_adult=false".format(key, query)
 
 r = requests.get(url)
 # print(type(r))
