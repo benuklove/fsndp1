@@ -15,4 +15,8 @@ hot_shots = media.Movie("Hot Shots",
                         "https://www.youtube.com/watch?v=jGpOLb_PwYU")
 
 
-movies = [holy_grail, naked_gun, hot_shots]
+movies = [holy_grail, naked_gun, hot_shots, holy_grail, naked_gun, hot_shots, holy_grail, naked_gun, hot_shots,
+          holy_grail, naked_gun, hot_shots, hot_shots, naked_gun, holy_grail, hot_shots, naked_gun, holy_grail,
+          hot_shots, naked_gun, holy_grail, hot_shots, naked_gun, holy_grail, hot_shots, naked_gun, holy_grail,
+          hot_shots, naked_gun, holy_grail, hot_shots, naked_gun, holy_grail, hot_shots, naked_gun, holy_grail,
+          hot_shots, naked_gun, holy_grail]

@@ -3,9 +3,6 @@ import apikey
 import media
 from operator import itemgetter
 
-import pprint
-pp = pprint.PrettyPrinter(indent=4)
-
 
 def get_movies():
     key = apikey.apikey
@@ -28,7 +25,7 @@ def get_movies():
                         popularity=result["popularity"])) for result in data["results"]]
 
     # Longer list of movies that results from common movie title keywords, shortened to 20 most popular
-    movies = sorted(movies, key=itemgetter("popularity"), reverse=True)[:18]
+    movies = sorted(movies, key=itemgetter("popularity"), reverse=True)[:20]
 
     # For each dict, get and add youtube url, create movie list
     films = []
@@ -47,9 +44,7 @@ def get_movies():
         films.append(media.Movie(movie["title"],
                                  movie["poster"],
                                  movie["youtube_url"],))
+
         print("Found: {}".format(movie["title"]))
 
     return films
-
-
-# get_movies()
