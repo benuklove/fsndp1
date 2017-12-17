@@ -1,3 +1,7 @@
+"""This is the main entry point file.  It runs main() which calls other
+functions and thereby other modules.
+"""
+
 import fresh_tomatoes
 import my_favorites
 import tmdb
@@ -15,12 +19,17 @@ def print_header():
 
 
 def launch():
+    """Get input from user. Control flow for the user choice made.
+    User selects 'm' or 's'.  'm' shows my favorites, 's' allows a search
+    for the user's favorite movies.
+    :return: None
+    """
     cmd = input("Do you want to see [m]y favorites, or [s]earch for yours? ")
 
-    if cmd == "m":
+    if cmd.lower() == "m":
         fresh_tomatoes.open_movies_page(my_favorites.movies)
 
-    elif cmd == "s":
+    elif cmd.lower() == "s":
         query = tmdb.get_movies()
         fresh_tomatoes.open_movies_page(query)
 
