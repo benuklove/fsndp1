@@ -1,2 +1,8 @@
 # fsndp1
-Udacity Full Stack Web Developer project one.
+What it is/does.
+
+Requirements (including api key).
+
+Control flow diagram.
+
+How to run it.
