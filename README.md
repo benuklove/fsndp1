@@ -53,6 +53,4 @@ Requirements
 
 Only requests is used because of the limited scope and need from TMDb API.  If this program expands, a more wide-ranging TMDb API wrapper should be used.  [tmdbsimple](https://github.com/celiao/tmdbsimple) is that wrapper.  :)
 
-
-
-
+A short example walk through video is [here](https://youtu.be/Gc_AtVNQgrg).
