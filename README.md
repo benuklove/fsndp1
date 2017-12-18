@@ -18,7 +18,8 @@ A simple control flow structure to give you an idea how it works:
 
 ![structure diagram][diagram]
 
-[diagram]: fsndp1/Simple_control_flow - Page 1.png
+[diagram]: https://github.com/benuklove/fsndp1/blob/master/Simple_control_flow.png
+
 
 Requirements (including api key).
 
