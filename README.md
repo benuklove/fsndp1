@@ -24,13 +24,11 @@ API Key
 -------
 You will need an API key to The Movie Database to access the API.  To obtain a key, follow these steps:
 
-1) Register for and verify an [account](https://www.themoviedb.org/account/signup).
-2) [Log into](https://www.themoviedb.org/login) your account.
-3) Select the API section on left side of your account page.
-4) Click on the link to generate a new API key and follow the instructions.
-
-.. _account: https://www.themoviedb.org/account/signup
-.. _Log into: https://www.themoviedb.org/login
+1. Register for and verify an [account](https://www.themoviedb.org/account/signup).
+2. [Log into](https://www.themoviedb.org/login) your account.
+3. Select the API section on left side of your account page.
+4. Click on the link to generate a new API key and follow the instructions.
+5. Put this key in the file tmdb.py for the variable 'key'.
 
 Installation
 ------------
@@ -47,6 +45,14 @@ Operation
 4. In a terminal at the project directory, type 'python entertainment_center.py'.  (without quotes of course)
 5. Follow prompt.
 
-Requirements (including api key).
+Requirements
+------------
+Python 3 only
+API key from The Movie Database (TMDb)
+Package: requests
+
 mention tmdbsimple
+
+
+
 
