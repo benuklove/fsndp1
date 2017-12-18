@@ -4,7 +4,7 @@ fsndp1
 Python project to generate a list of movies with movie posters and links to their trailers.
 -------------------------------------------------------------------------------------------
 
-Starting with entertainment_center.py you will be asked for input in a terminal window - Do you want to see my favorite movies (type 'm'), or search for your favorite movies (type 's')?
+Starting with `entertainment_center.py` you will be asked for input in a terminal window - Do you want to see my favorite movies (type 'm'), or search for your favorite movies (type 's')?
 
 If you search for your favorite, you will be given another option to input movie title keywords, for example, "star wars".
 
@@ -28,13 +28,13 @@ You will need an API key to The Movie Database to access the API.  To obtain a k
 2. [Log into](https://www.themoviedb.org/login) your account.
 3. Select the API section on left side of your account page.
 4. Click on the link to generate a new API key and follow the instructions.
-5. Put this key in the file tmdb.py for the variable 'key'.
+5. Put this key in the file `tmdb.py` for the variable 'key'.
 
 Installation
 ------------
 From the command line.  Make adjustments, if needed, for using an IDE. 
 
-- Take a look at the next bullet, just in case you want to do that now.
+* Take a look at the next bullet, just in case you want to do that now.
 1. Clone download this repository to your local machine's project directory.
 2. Open a terminal window and cd into the project's directory.  
 * If you haven't already, create a virtual environment for your project and activate it.
@@ -47,11 +47,11 @@ Operation
 
 Requirements
 ------------
-Python 3 only
-API key from The Movie Database (TMDb)
-Package: requests
+- Python 3 only
+- API key from The Movie Database (TMDb)
+- Package: requests
 
-mention tmdbsimple
+Only requests is used because of the limited scope and need from TMDb API.  If this program expands, a more wide-ranging TMDb API wrapper should be used.  [tmdbsimple](https://github.com/celiao/tmdbsimple) is that wrapper.  :)
 
 
 
