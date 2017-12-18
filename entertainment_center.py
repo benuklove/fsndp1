@@ -1,4 +1,4 @@
-"""This is the main entry point file.  It runs main() which calls other
+"""This file is the main entry point.  It runs main() which calls other
 functions and thereby other modules.
 """
 
