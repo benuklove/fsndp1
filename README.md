@@ -10,6 +10,8 @@ If you search for your favorite, you will be given another option to input movie
 
 A search will be done using The Movie Database (TMDb)'s API.  As each matching movie is found, the terminal will output the name.  The most popular will be used to generate a browser window (in a new tab) displaying the title with a movie poster which is linked to a popout YouTube trailer video.
 
+For more information on the API, see [TMDb API](https://www.themoviedb.org/documentation/api).
+
 Control flow diagram.
 
 Requirements (including api key).
