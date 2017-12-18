@@ -12,7 +12,11 @@ A search will be done using The Movie Database (TMDb)'s API.  As each matching m
 
 For more information on the API, see [TMDb API](https://www.themoviedb.org/documentation/api).
 
-Control flow diagram.
+Control flow diagram
+--------------------
+A simple control flow structure to give you an idea how it works:
+![structure diagram][diagram]
+[diagram]: fsndp1/Simple_control_flow - Page 1.png
 
 Requirements (including api key).
 
