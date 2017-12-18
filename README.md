@@ -1,5 +1,8 @@
-# fsndp1
-What it is/does.
+fsndp1
+======
+
+Python project to generate a list of movies with movie posters and links to their trailers.
+-------------------------------------------------------------------------------------------
 
 Requirements (including api key).
 
