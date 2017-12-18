@@ -15,7 +15,9 @@ For more information on the API, see [TMDb API](https://www.themoviedb.org/docum
 Control flow diagram
 --------------------
 A simple control flow structure to give you an idea how it works:
+
 ![structure diagram][diagram]
+
 [diagram]: fsndp1/Simple_control_flow - Page 1.png
 
 Requirements (including api key).
